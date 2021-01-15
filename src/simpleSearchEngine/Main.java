@@ -49,11 +49,12 @@ public class Main {
             System.out.println("2. Print all persons");
             System.out.println("0. Exit");
 
+
             int decision = scanner.nextInt();
 
             switch (decision) {
                 case 1:
-                    searchStrategy(names, nameMap, scanner);
+                    searchStrategy(names, nameMap);
                     break;
                 case 2:
                     printAll(fileName);
@@ -65,25 +66,27 @@ public class Main {
                     break;
                 default:
                     System.out.println("Incorrect option! Try again!");
-
             }
+
+
         }
 
     }
 
-    public static void searchStrategy (ArrayList<String> names, HashMap<String, ArrayList<Integer>> nameMap, Scanner scanner) {
+    public static void searchStrategy (ArrayList<String> names, HashMap<String, ArrayList<Integer>> nameMap) {
         System.out.println("Select a matching strategy: ALL, ANY, NONE");
+        Scanner scanner = new Scanner(System.in);
         String answer = scanner.nextLine();
 
-        if ("ALL".equals(answer)) {
+        if ("ALL".equalsIgnoreCase(answer)) {
             Find find = new All(names, nameMap);
             find.result();
 
-        } else if ("ANY".equals(answer)) {
+        } else if ("ANY".equalsIgnoreCase(answer)) {
             Find find = new Any(names, nameMap);
             find.result();
 
-        } else if ("NONE".equals(answer)) {
+        } else if ("NONE".equalsIgnoreCase(answer)) {
             Find find = new None(names, nameMap);
             find.result();
         }

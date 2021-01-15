@@ -37,6 +37,9 @@ public class All extends Find {
         } catch(Exception e) {
             System.out.print("");
         }
+        if (arrays.size() == 0) {
+            System.out.println("No suitable people found!");
+        }
 
         ArrayList<Integer> printList = new ArrayList<>();
         ArrayList<Integer> stopRepeat = new ArrayList<>();
