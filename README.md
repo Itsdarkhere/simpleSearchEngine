@@ -9,6 +9,7 @@ Last stage implementation details: https://hyperskill.org/projects/66/stages/359
 Basic functionality in a nutshell:
 Searching for names/emails from a textfile,
 according to a search strategy that is chosen by the user.
+
 Search strategies: ALL, ANY, or NONE.
 
 ALL: Needs a precise match to return/print anything.
