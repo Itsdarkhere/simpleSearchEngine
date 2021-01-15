@@ -4,6 +4,7 @@ SSE to search for names/emails from a text file.
 Hello friend!
 
 This is my implementation of the hyperskill.org project Simple search engine.
+
 Last stage implementation details: https://hyperskill.org/projects/66/stages/359/implement
 
 Basic functionality in a nutshell:
