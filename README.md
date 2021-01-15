@@ -7,7 +7,8 @@ This is my implementation of the hyperskill.org project Simple search engine.
 Last stage implementation details: https://hyperskill.org/projects/66/stages/359/implement
 
 Basic functionality in a nutshell:
-Searching for names/emails from a textfile by a search strategy that is chosen by the user.
+Searching for names/emails from a textfile,
+according to a search strategy that is chosen by the user.
 Search strategies: ALL, ANY, or NONE.
 
 ALL: Needs a precise match to return/print anything.
